@@ -60,15 +60,24 @@ p {
 }
 
 .deadline-format {
+    display: flex;
     padding-block: 10px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
-    display: inline-block;
+    justify-content: space-around;
+    text-align: center;
     flex-direction: row;
-    background-color: rgb(26, 26, 69);
+    
     align-items: center;
     margin: 0 1rem; /* Space between each countdown item */
+}
+.deadline-format div {
+    margin: 0 10px;
+      padding: 10px; /* Added padding for separation */
+  border: 2px solid #ccc; /* Optional border for separation */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgb(26, 26, 69);; /* Light background color */
 }
 
 .deadline-format h4 {
